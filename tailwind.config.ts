@@ -8,7 +8,13 @@ export default {
     './src/app/**/*.{js,ts,jsx,tsx,mdx}',
     './node_modules/@heroui/theme/dist/**/*.{js,ts,jsx,tsx}',
   ],
-  theme: {},
+  theme: {
+    extend: {
+      backgroundImage: {
+        'dark-gradient': 'linear-gradient(to top, rgba(0,0,0,0.8), transparent)',
+      }
+    },
+  },
   darkMode: 'class',
   plugins: [heroui()],
 } satisfies Config;
